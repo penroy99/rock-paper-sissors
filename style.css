@@ -1,0 +1,99 @@
+* {
+    color: white;
+}
+
+body {
+    background-image: url("./imgs/black-galaxy.png");
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkgrey;
+    font-size: 24px;
+}
+
+.top-link {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 15%;
+}
+
+#homeH {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 48px;
+    padding-right: 10px;
+    padding-left: 10px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+#homeP {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 32px;
+    text-align: center;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.intruder-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    border-image: linear-gradient(135deg, darkgrey, rgb(55, 55, 55)) 1;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.chars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10%;
+    font-size: 32px;
+    text-align: center;
+}
+
+.img-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.img-gallery > li {
+    flex-basis: 350px;
+    flex: 1;
+}
+
+.img-gallery li img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.fight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10%;
+    font-size: 32px;
+    text-align: center;
+}
