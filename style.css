@@ -2,6 +2,9 @@
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-image: url("./imgs/black-galaxy.png");
