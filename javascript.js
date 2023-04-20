@@ -16,7 +16,6 @@ function getComputerChoice(max) {
 }
 
 function game(user_selection, computer_selection) {
-    let point = "";
     if (computer_selection === user_selection) {
         return;
 } else {
@@ -57,19 +56,17 @@ function declareWinner(user_score, computer_score) {
     }
 }
 
-function letsGO() {
-    const MAX = 3
-    let user_score = 0
-    let computer_score = 0
-    let quit = false;
+const MAX = 3
+let user_score = 0
+let computer_score = 0
+let quit = false;
 
-    while (quit === false) {
+while (quit === false) {
     let user_input = prompt('Rock Paper or Sissors? ');
     let user_selection = getUserChoice(user_input);
     let computer_selection = getComputerChoice(MAX);
     game(user_selection, computer_selection);
     rounds(user_score, computer_score);
-    }
-
-    return console.log(declareWinner(user_score, computer_score));
 }
+
+console.log(declareWinner(user_score, computer_score));

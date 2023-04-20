@@ -108,3 +108,22 @@ body {
 .fight > .img-gallery {
     gap: 30px;
 }
+
+.vs {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#start-button {
+    border: white;
+    border-style: double;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#start-button:hover {
+    background-color: darkred;
+}
