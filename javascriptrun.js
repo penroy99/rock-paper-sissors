@@ -1,4 +1,4 @@
-/* function getUsesChoice(user_input) {
+function getUserChoice(user_input) {
     switch (user_input.toUpperCase()) {
         case "ROCK":
             return 0;
@@ -63,6 +63,7 @@ function startGame() {
     const options = 3
 
     while (quit === false) {
+        
         const user_input = prompt("rock paper or scissors?")
         const user_selection = getUserChoice(user_input);
         const computer_selection = getComputerChoice(options);
@@ -84,11 +85,11 @@ function startGame() {
     }
 }
 
-*/
 
-function makeSelection(i) {
-    return (i);
-}
+startButton = document.querySelector('#start-button');
+const userScore = document.querySelector('#user-score');
+const computerScore = document.querySelector('#computer-score');
 
-const selectionButtons = document.querySelectorAll('[data-selection]');
+startButton.addEventListener('click', startGame);
 
+///////// ///////// ///////// ///////// ///////// ///////// ///////// ///////// 

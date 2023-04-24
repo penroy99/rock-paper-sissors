@@ -1,8 +1,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>RockPaperSissors</title>
-        <script src="./javascript.js" defer></script>
+        <title>RockPaperScissors</title>
+        <script src="./javascriptrun.js" defer></script>
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
@@ -15,7 +15,7 @@
             <h1 id="homeH">BACKGROUND STORY</h1>
             <p id="homeP">The entity known as "The Intruder" has entered Earth with one cause - aliminating the human race. 
                 <br>After months of searching we have found the intruder's homebase.
-                <br>The only thing standing on his way to destory the Planet Earth is to defeat The Intruder taking advantage of it's only weakness - by it's own frustration of loosing a Rock Paper Sissors game.</p>
+                <br>The only thing standing on his way to destory the Planet Earth is to defeat The Intruder taking advantage of it's only weakness - by it's own frustration of loosing a Rock Paper Sicssors game.</p>
             <p id="homeH">We've got an image of The Intruder!</p>
             <img class="intruder-img" src="./imgs/evil.png" alt="A picture of The Intruder">
         </div>
@@ -31,11 +31,15 @@
             <h1>THE FIGHT</h1>
             <button id="start-button">Click Here to Start</button>
             <div class="vs"> The Intruder VS HERO</div>
-            <div class="score">0 - 0 </div>
-            <ul class="img-gallery">
-                <li class="rps" id="rock"><img src="./imgs/rock.png"></li>
-                <li class="rps"><img src="./imgs/paper.png"></li>
-                <li class="rps"><img src="./imgs/sissors.png"></li>
+            <div class="score">
+                <div id="user-score">0</div>
+                <div> - </div>
+                <div id="computer-score">0</div>
+            </div>
+            <ul class="img-gallery selections">
+                <li class="selection" data-selection="rock"><img src="./imgs/rock.png"></li>
+                <li class="selection" data-selection="paper"><img src="./imgs/paper.png"></li>
+                <li class="selection" data-selection="scissors"><img src="./imgs/scissors.png"></li>
             </ul>
         </div>
     </body>
