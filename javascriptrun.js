@@ -85,7 +85,6 @@ function startGame() {
     }
 }
 
-
 startButton = document.querySelector('#start-button');
 const userScore = document.querySelector('#user-score');
 const computerScore = document.querySelector('#computer-score');
@@ -93,3 +92,16 @@ const computerScore = document.querySelector('#computer-score');
 startButton.addEventListener('click', startGame);
 
 ///////// ///////// ///////// ///////// ///////// ///////// ///////// ///////// 
+
+function makeSelection(pick) {
+    const myHero = document.querySelector(`#${pick}`);
+    return myHero.classList.add('my-hero');
+}
+
+const selectionButtons = document.querySelectorAll('[data-hero]');
+selectionButtons.forEach(selectionButton => {
+    selectionButton.addEventListener('click', e => {
+        const selectionName = selectionButton.dataset.hero;
+        makeSelection(selectionName);
+    })
+})
